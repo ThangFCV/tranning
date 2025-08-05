@@ -5,11 +5,12 @@ import Detail from './pages/Detail.vue'
 import Item from './pages/Item.vue'
 import ToDo from './pages/ToDo.vue'
 import User from './pages/User.vue'
+import UserDetail from './pages/UserDetail.vue'
 import HomeLayout from './layouts/HomeLayout.vue'
 import UserLayout from './layouts/UserLayout.vue'
 
 const routes = [
-  { path: '/', component: HomeLayout,
+  { path: '/', component: HomeLayout, // layout home
     children:[
       { path: '', component: Home },
       { path: 'about', component: About },
@@ -24,9 +25,16 @@ const routes = [
       },
     ]
    },
-   { path: '/user', component: UserLayout,
+   { path: '/user', component: UserLayout, //layout user
     children:[
-      {path: '', component: User}
+      {path: '', component: User,
+        // children:[
+        //   {
+        //     path: ':id',
+        //   }
+        // ]
+      },
+      {path:'/user/:id',component: UserDetail}
     ]
    }
 ]

@@ -1,6 +1,6 @@
 <script setup>
     import Form from '../components/Form.vue';
-    import listToDo from '../components/listToDo.vue';
+    import listToDo from '../components/ListToDo.vue';
 
 </script>
 

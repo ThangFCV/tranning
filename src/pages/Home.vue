@@ -1,6 +1,6 @@
 <script setup>
 import { reactive, ref, computed, onMounted } from 'vue'
-import addCount from '../components/addCount.vue'
+import addCount from '../components/AddCount.vue'
 import Child from '../components/Child.vue'
 
 

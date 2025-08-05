@@ -71,7 +71,7 @@
         </modal>
     </Teleport>
 </template>
-<style>
+<style scoped>
     ul li{
         cursor: pointer;
     }
