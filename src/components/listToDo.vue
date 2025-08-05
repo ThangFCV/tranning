@@ -43,7 +43,7 @@
             <!-- stop de ngan chan viec lan ra ngaoif cuar hanh dong remove -->
         </li>
     </ul>
-
+    <!-- teleport render modal ngoai dom -->
     <Teleport to="body">
         <modal :open="openModal" @close="openModal = false">
         <template #header>

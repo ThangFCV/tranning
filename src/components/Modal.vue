@@ -6,6 +6,7 @@ const popup = defineProps({
 
 </script>
 <template>
+    <!-- Transition dung de tao hieu ung fade slie khi dom xuat hien -->
     <Transition name="modal">
     <div v-if="open" class="modal-mask">
       <div class="modal-container">
