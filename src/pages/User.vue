@@ -1,4 +1,5 @@
 <script setup>
+import UserLayout from '@/layouts/UserLayout.vue';
 import { reactive, ref, watchEffect } from 'vue';
 
 const url_API ="http://localhost:3000/data/users"
@@ -27,4 +28,5 @@ watchEffect(async () => {
             </p>
         </li>
     </ul>
+
 </template>
